@@ -17,6 +17,10 @@ document.addEventListener('DOMContentLoaded', () => {
         currentThemeIndex = (currentThemeIndex + 1) % themes.length;
     }
 
+
+    themes[currentThemeIndex].disabled = false;
+    updateSeasonText();
+
+
     swapButton.addEventListener('click', swapTheme);
-    swapTheme(); 
 });
