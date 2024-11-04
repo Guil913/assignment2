@@ -1,44 +1,22 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const poemContainer = document.getElementById('poemContainer');
-    const poemTemplate = document.getElementById('poemTemplate');
+    const themes = Array.from(document.querySelectorAll('.theme'));
+    const seasonText = document.querySelector('.current-season');
+    const swapButton = document.querySelector('.swap-style-button');
+    let currentThemeIndex = 0;
 
-    // add
-    function addMorePoems() {
-        const newPoemSection = poemTemplate.cloneNode(true); // Clone 
-        poemContainer.appendChild(newPoemSection); // Append 
+    function updateSeasonText() {
+        const currentTheme = themes[currentThemeIndex];
+        seasonText.textContent = `Current Season: ${currentTheme.getAttribute('data-season')}`;
     }
 
-    // Infinite scroll:
-    window.addEventListener('scroll', () => {
-        const scrollPosition = window.innerHeight + window.scrollY;
-        const threshold = document.body.offsetHeight - 500;
+    function swapTheme() {
+        themes.forEach((theme, index) => {
+            theme.disabled = index !== currentThemeIndex;
+        });
+        updateSeasonText();
+        currentThemeIndex = (currentThemeIndex + 1) % themes.length;
+    }
 
-        if (scrollPosition >= threshold) {
-            addMorePoems();
-        }
-    });
-
-
-//_____________________________________________________________
-
-  
-    const stylesheets = [
-        document.getElementById('theme1'),
-        document.getElementById('theme2'),
-        document.getElementById('theme3'),
-        document.getElementById('theme4')
-    ];
-    let currentStyleIndex = 0;
-
-    document.getElementById('swapStyleButton').addEventListener('click', () => {
-     
-        stylesheets[currentStyleIndex].disabled = true;
-
-  
-        currentStyleIndex = (currentStyleIndex + 1) % stylesheets.length;
-
-   
-        stylesheets[currentStyleIndex].disabled = false;
-    });
+    swapButton.addEventListener('click', swapTheme);
+    swapTheme(); 
 });
-
