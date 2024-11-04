@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+header {
+padding-top:1%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+h1{
+    font-size: 6vw;
+    margin: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2vw;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: Times New Roman, sans-serif;
+}
+
+/* Poema-container */
+.poem-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh; 
+    overflow-y: scroll; 
+}
+
+/* Poema-scroll vertical */
+.poem-container::-webkit-scrollbar {
+    display: none; 
+}
+.poem-container {
+    scrollbar-width: none; 
+}
+
+/* Poema Section */
+.poem-section {
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.poem {
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 1vw;
+    font-family: Times New Roman, sans-serif;
+  transition: transform 0.3s ease, background-color 0.3s ease; 
+}
+
+.poem:hover {
+    transform: scale(1.20); 
+  
+}
+
+
+
+
+
+body::-webkit-scrollbar {
+    padding: 10pt; /* not working hmm criar container só pra isto? */
+    width: 8px;
+    height: 8px;
+}
+
+body::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    transition: opacity 0.3s ease; /*not working ver depois*/
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/*button*/
+
+#swapStyleButton {
+    background-color: #776060;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1vw;
+    border-radius: 50%;
+    opacity: 0.3;
+    transition: opacity 0.3s ease; 
+}
+
+#swapStyleButton:hover {
+    opacity: 1; 
+}
