@@ -17,10 +17,10 @@ document.addEventListener('DOMContentLoaded', () => {
         currentThemeIndex = (currentThemeIndex + 1) % themes.length;
     }
 
-
+    // Enable the first theme on load
     themes[currentThemeIndex].disabled = false;
     updateSeasonText();
 
-
+    // Swap theme on button click
     swapButton.addEventListener('click', swapTheme);
 });

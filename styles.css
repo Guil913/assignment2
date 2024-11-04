@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    position:fixed;
+    position:f
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -102,4 +102,60 @@ h2 {
     width: 100%;
     z-index: 999;
     pointer-events: none;
+}
+
+
+
+/* __________________________________________________________________________________________*/
+.fixed-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 0 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+
+.header-content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Style for Current Season text */
+.current-season {
+    font-size: 1.2vw;
+    color: #333;
+    position: absolute;
+    left: 20px; /* Position it on the left */
+}
+
+/* Style for What is This link */
+.what-is-this {
+    font-size: 1.2vw;
+    text-decoration: none;
+    color: #555;
+    position: absolute;
+    right: 20px; /* Position it on the right */
+}
+
+.what-is-this:hover {
+    color: #000;
+}
+
+/* Centered Logo */
+.logo {
+    width: 50px;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
