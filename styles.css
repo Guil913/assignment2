@@ -130,32 +130,32 @@ h2 {
     justify-content: center;
 }
 
-/* Style for Current Season text */
+
 .current-season {
     font-size: 1.2vw;
     color: #333;
     position: absolute;
-    left: 20px; /* Position it on the left */
+    left: 20px; 
 }
 
-/* Style for What is This link */
+
 .what-is-this {
     font-size: 1.2vw;
     text-decoration: none;
     color: #555;
     position: absolute;
-    right: 20px; /* Position it on the right */
+    right: 20px; 
 }
 
 .what-is-this:hover {
     color: #000;
 }
 
-/* Centered Logo */
+
 .logo {
     width: 50px;
     height: auto;
     position: absolute;
-    left: 50%;
+    left: 50%-10pt;
     transform: translateX(-50%);
 }
