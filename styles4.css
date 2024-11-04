@@ -7,3 +7,7 @@ body{
 #swapStyleButton {
     background-color: #4ea3a4;
 }
+
+.fixed-header {
+    background-color: rgba(149, 207, 255, 0.9);
+}
