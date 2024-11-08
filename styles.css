@@ -137,7 +137,7 @@ h2 {
 }
 
 
-/* "What is this?" link styling */
+/* "What is this?" link styling __________________________________________________________________*/
 .what-is-this {
     font-size: 1.2vw;
     color: #555;
@@ -151,7 +151,6 @@ h2 {
     color: #000;
 }
 
-/* pop up what is this  */
 .info-overlay {
     display: none;
     position: fixed;
@@ -159,7 +158,7 @@ h2 {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.8); /* Background darkening */
+    background: rgba(0, 0, 0, 0.8); 
     backdrop-filter: blur(5px); 
     z-index: 2000;
     display: flex;
@@ -168,11 +167,11 @@ h2 {
 }
 
 .info {
-    background: white;
+    background: #FEFEF3;
     padding: 20px;
     border-radius: 8px;
-    width: 80%;
-    max-width: 400px;
+    width: 100%;
+    max-width: 80%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     text-align: center;
 }
@@ -181,6 +180,13 @@ textarea {
     width: 100%;
     height: 100px;
     margin-bottom: 10px;
+}
+
+.inforab-img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%
 }
 
 .close-button {
