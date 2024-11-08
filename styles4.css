@@ -1,7 +1,7 @@
 /*WINTER*/
 
 body{
-    background-color: rgb(185, 254, 253);
+    background-color: rgb(222, 253, 253);
    }
 
 #swapStyleButton {
@@ -9,5 +9,6 @@ body{
 }
 
 .fixed-header {
-    background-color: rgba(149, 207, 255, 0.9);
-}
+    background: linear-gradient(to bottom,  rgb(108, 196, 194), rgba(122, 248, 134, 0));
+   }
+   

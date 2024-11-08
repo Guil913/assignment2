@@ -1,7 +1,7 @@
 /*SUMMER*/
 
 body{
-    background-color: rgb(255, 246, 143);
+    background-color: rgb(253, 250, 215);
     }
 
  #swapStyleButton {
@@ -9,5 +9,6 @@ body{
  }
 
  .fixed-header {
-       background-color: rgba(234, 230, 154, 0.9);
+    background: linear-gradient(to bottom, rgb(167, 162, 111), rgba(122, 248, 134, 0));
    }
+   

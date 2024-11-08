@@ -1,7 +1,7 @@
 /*AUTUMN*/
 
 body{
-    background-color: rgb(255, 180, 118);
+    background-color: rgb(248, 210, 178);
     }
 
  #swapStyleButton {
@@ -9,5 +9,6 @@ body{
  }
 
  .fixed-header {
-       background-color: rgba(255, 149, 96, 0.9);
-   }
+        background: linear-gradient(to bottom,rgb(255, 180, 118), rgba(122, 248, 134, 0));
+       }
+       
