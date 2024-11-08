@@ -61,7 +61,7 @@ h2 {
     border-radius: 50%;
     opacity: 0.3;
     transition: opacity 0.3s ease;
-    z-index: 1000;
+    z-index: 3000;
 }
 
 .swap-style-button:hover {
