@@ -24,3 +24,22 @@ document.addEventListener('DOMContentLoaded', () => {
     // Swap theme on button click
     swapButton.addEventListener('click', swapTheme);
 });
+
+
+// botao what is this ?
+
+document.addEventListener('DOMContentLoaded', () => {
+    const whatIsThisLink = document.querySelector('.what-is-this');
+    const infoOverlay = document.querySelector('.info-overlay');
+    const closeButton = document.querySelector('.close-button');
+
+    // Open info pop-up when "What is this?" is clicked
+    whatIsThisLink.addEventListener('click', () => {
+        infoOverlay.style.display = 'flex'; // Show
+    });
+
+
+    closeButton.addEventListener('click', () => {
+        infoOverlay.style.display = 'none'; // Hide
+    });
+});
