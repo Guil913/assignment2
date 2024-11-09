@@ -203,35 +203,35 @@ textarea {
 
 /* Container for images */
 .image-container {
-    position: relative; /* Positioning context for the images */
-    z-index: -1; /* Ensure images stay behind the poem content */
+    position: relative; 
+    z-index: -1;
   }
   
-  /* Common style for all images */
+
   .scroll-image {
     position: absolute;
-    width: 25%; /* Smaller images, adjust as needed */
+    width: 25%; 
     height: auto;
-    margin: 10px; /* Optional: space between images */
-    z-index: -1; /* Place images behind the poem content */
+    margin: 10px; 
+    z-index: -1; 
   }
   
-  /* Set the Y-position (vertical offset) to create the staircase effect */
-  .scroll-image:nth-child(odd) {
-    left: 0; /* Odd images (1st, 3rd, 5th, etc.) aligned to the left */
-    top: calc(750px * (var(--i) - 1)); /* Increased vertical gap (750px) for odd images */
-  }
-  
+
   .scroll-image:nth-child(even) {
-    right: 0; /* Even images (2nd, 4th, 6th, etc.) aligned to the right */
-    top: calc(750px * var(--i)); /* Increased vertical gap (750px) for even images */
+    left: 1%; 
+    top: calc(550px * (var(--i) - 1)); 
   }
   
-  /* Background images for each image element with new indexes */
+  .scroll-image:nth-child(odd) {
+    right: 1%;
+    top: calc(550px * var(--i)); 
+  }
+  
+
   .scroll-image:nth-child(1) {
     background: url('images/pic1.webp') no-repeat center center;
     background-size: cover;
-    --i: 1; /* Set index for nth-child */
+    --i: 1;
   }
   
   .scroll-image:nth-child(2) {
