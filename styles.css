@@ -197,3 +197,94 @@ textarea {
     cursor: pointer;
     border-radius: 5px;
 }
+
+
+
+
+/* Container for images */
+.image-container {
+    position: relative; /* Positioning context for the images */
+    z-index: -1; /* Ensure images stay behind the poem content */
+  }
+  
+  /* Common style for all images */
+  .scroll-image {
+    position: absolute;
+    width: 25%; /* Smaller images, adjust as needed */
+    height: auto;
+    margin: 10px; /* Optional: space between images */
+    z-index: -1; /* Place images behind the poem content */
+  }
+  
+  /* Set the Y-position (vertical offset) to create the staircase effect */
+  .scroll-image:nth-child(odd) {
+    left: 0; /* Odd images (1st, 3rd, 5th, etc.) aligned to the left */
+    top: calc(750px * (var(--i) - 1)); /* Increased vertical gap (750px) for odd images */
+  }
+  
+  .scroll-image:nth-child(even) {
+    right: 0; /* Even images (2nd, 4th, 6th, etc.) aligned to the right */
+    top: calc(750px * var(--i)); /* Increased vertical gap (750px) for even images */
+  }
+  
+  /* Background images for each image element with new indexes */
+  .scroll-image:nth-child(1) {
+    background: url('images/pic1.webp') no-repeat center center;
+    background-size: cover;
+    --i: 1; /* Set index for nth-child */
+  }
+  
+  .scroll-image:nth-child(2) {
+    background: url('images/pic2.webp') no-repeat center center;
+    background-size: cover;
+    --i: 2;
+  }
+  
+  .scroll-image:nth-child(3) {
+    background: url('images/pic3.webp') no-repeat center center;
+    background-size: cover;
+    --i: 3;
+  }
+  
+  .scroll-image:nth-child(4) {
+    background: url('images/pic4.webp') no-repeat center center;
+    background-size: cover;
+    --i: 4;
+  }
+  
+  .scroll-image:nth-child(5) {
+    background: url('images/pic5.webp') no-repeat center center;
+    background-size: cover;
+    --i: 5;
+  }
+  
+  .scroll-image:nth-child(6) {
+    background: url('images/pic6.webp') no-repeat center center;
+    background-size: cover;
+    --i: 6;
+  }
+  
+  .scroll-image:nth-child(7) {
+    background: url('images/pic7.webp') no-repeat center center;
+    background-size: cover;
+    --i: 7;
+  }
+  
+  .scroll-image:nth-child(8) {
+    background: url('images/pic8.webp') no-repeat center center;
+    background-size: cover;
+    --i: 8;
+  }
+  
+  .scroll-image:nth-child(9) {
+    background: url('images/pic9.webp') no-repeat center center;
+    background-size: cover;
+    --i: 9;
+  }
+  
+  .scroll-image:nth-child(10) {
+    background: url('images/pic10.webp') no-repeat center center;
+    background-size: cover;
+    --i: 10;
+  }
+  
