@@ -219,19 +219,19 @@ textarea {
 
   .scroll-image:nth-child(even) {
     left: 1%; 
-    top: calc(550px * (var(--i) - 1)); 
+    top: calc(550px * (var(--i) - 1) - 50vh);
+
   }
   
   .scroll-image:nth-child(odd) {
     right: 1%;
     top: calc(550px * var(--i)); 
   }
-  
 
   .scroll-image:nth-child(1) {
     background: url('images/pic1.webp') no-repeat center center;
     background-size: cover;
-    --i: 1;
+    --i: 1; 
   }
   
   .scroll-image:nth-child(2) {
