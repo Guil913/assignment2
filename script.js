@@ -10,30 +10,39 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function swapTheme() {
-        themes.forEach((theme, index) => {
-            theme.disabled = index !== currentThemeIndex;
-        });
-        updateSeasonText();
-        currentThemeIndex = (currentThemeIndex + 1) % themes.length;
+      
+        document.body.style.opacity = 0;
+
+        setTimeout(() => {
+            themes.forEach((theme, index) => {
+                theme.disabled = index !== currentThemeIndex;
+            });
+            updateSeasonText();
+            currentThemeIndex = (currentThemeIndex + 1) % themes.length;
+
+      
+            document.body.style.opacity = 1;
+        }, 500); // (0.5s)
     }
 
-    // Enable the first theme on load
+ 
     themes[currentThemeIndex].disabled = false;
     updateSeasonText();
 
-    // Swap theme on button click
+ 
     swapButton.addEventListener('click', swapTheme);
 });
 
 
-// botao what is this ?
+
+// button what is this ?________________________________________________________________________________
 
 document.addEventListener('DOMContentLoaded', () => {
     const whatIsThisLink = document.querySelector('.what-is-this');
     const infoOverlay = document.querySelector('.info-overlay');
     const closeButton = document.querySelector('.close-button');
 
-    // Open info pop-up when "What is this?" is clicked
+
     whatIsThisLink.addEventListener('click', () => {
         infoOverlay.style.display = 'flex'; // Show
     });
