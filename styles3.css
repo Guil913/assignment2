@@ -40,3 +40,8 @@ body{
  .days-list button:hover {
        background-color: #ca7300;
    }
+
+::-webkit-scrollbar-thumb {
+       background:rgb(221, 136, 67);
+       border-radius: 10px;
+     }

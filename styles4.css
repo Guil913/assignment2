@@ -26,7 +26,7 @@ body{
 
 .fixed-header {
     background: linear-gradient(to bottom,  rgb(108, 196, 194), rgba(122, 248, 134, 0));
-   }
+ }
    
 .swap-style-button, .quote-button, .days-button {
     background-color: #1ea8ca;
@@ -35,8 +35,13 @@ body{
    
 .quote-display {
     background-color: #b4e2f5;
-  }
+}
 
 .days-list button:hover {
     background-color: #14a3db;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(108, 196, 194);
+    border-radius: 10px;
 }

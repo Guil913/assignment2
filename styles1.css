@@ -38,3 +38,8 @@ body {
 .quote-display {
     background-color: #b6ffb6;
   }
+
+::-webkit-scrollbar-thumb {
+    background: rgb(174, 253, 71);
+    border-radius: 10px;
+  }
