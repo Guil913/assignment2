@@ -494,7 +494,10 @@ textarea {
       }
 
       @media only screen and (max-width: 1200px) {
-     
+        h1{
+          margin-top:50pt;
+          }
+              
 
 .poem{
   font-size: 1.5vw;
@@ -503,12 +506,27 @@ textarea {
   opacity:0.5;
     }
       }
-
-
-
+      .what-is-this {
+        font-size: 3.2vw;
+     opacity:0.5;
+    }
+    .current-season {
+      font-size: 3.2vw;
+      opacity:0.5;
+    }
+.info{
+  font-size: 1em;
+}
 
 
       @media only screen and (max-width: 800px) {
+h1{
+margin-top:100pt;
+}
+
+
+
+
         .poem{
           font-size: 2.5vw;
         }
@@ -516,4 +534,22 @@ textarea {
         .image-container {
       opacity:0.2;
         }
+h2{
+
+  font-size: 5.2vw;
+
+}
+     .logo {
+          display: none;
       }
+
+      .days-button {
+        right:35%;
+        opacity:0.5;
+        font-size: 4.2vw;
+       
+    }
+
+
+
+    }
