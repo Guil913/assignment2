@@ -55,3 +55,30 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 //carousel________________________________________________________________________________
+// Function to fetch a random animal fact
+async function getRandomAnimalFact() {
+    try {
+        const response = await fetch('https://some-random-api.ml/facts/animal');
+        
+        if (!response.ok) {
+            throw new Error('Failed to fetch animal fact');
+        }
+
+        const data = await response.json();
+        return data.fact;  // The fact will be inside the 'fact' key
+    } catch (error) {
+        console.error('Error fetching animal fact:', error);
+        return 'Sorry, could not fetch the animal fact at the moment.';
+    }
+}
+
+// Function to display the fetched animal fact
+function displayAnimalFact() {
+    getRandomAnimalFact().then(fact => {
+        const animalFactElement = document.querySelector('.animal-fact p');
+        animalFactElement.textContent = fact;  // Set the fact as the text of the paragraph
+    });
+}
+
+// Call the function to display the animal fact when the page loads
+document.addEventListener('DOMContentLoaded', displayAnimalFact);
