@@ -492,3 +492,28 @@ textarea {
           border-radius: 50%;
           margin-top: 20px;
       }
+
+      @media only screen and (max-width: 1200px) {
+     
+
+.poem{
+  font-size: 1.5vw;
+}
+.image-container {
+  opacity:0.5;
+    }
+      }
+
+
+
+
+
+      @media only screen and (max-width: 800px) {
+        .poem{
+          font-size: 2.5vw;
+        }
+
+        .image-container {
+      opacity:0.2;
+        }
+      }
