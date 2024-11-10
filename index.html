@@ -4,16 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
-<meta http-equiv='cache-control' content='no-cache'> 
-<meta http-equiv='expires' content='0'> 
-<meta http-equiv='pragma' content='no-cache'>
-
-
-
-
-
-
     <title>GUESS HOW MUCH I LOVE YOU</title>
     <link rel="icon"  href="/images/favicon.ico">
     <link rel="stylesheet" href="styles.css"> 
@@ -170,8 +160,24 @@
                 <button class="close-button">Close</button>
             </div>
         </div>
+
+
+        <div class="thumbnail-carousel">
+            <button class="carousel-button prev" onclick="scrollCarousel(-1)">&#10094;</button>
+            
+            <div class="thumbnails">
+                <img src="images/car1.webp" alt="Car 1">
+                <img src="images/car2.webp" alt="Car 2">
+                <img src="images/car3.webp" alt="Car 3">
+                <img src="images/car4.webp" alt="Car 4">
+                <img src="images/car5.webp" alt="Car 5">
+            </div>
+            
+            <button class="carousel-button next" onclick="scrollCarousel(1)">&#10095;</button>
+        </div>
     </main>
 
     <script src="script.js"></script>
+ 
 </body>
 </html>

@@ -52,3 +52,6 @@ document.addEventListener('DOMContentLoaded', () => {
         infoOverlay.style.display = 'none'; // Hide
     });
 });
+
+
+//carousel________________________________________________________________________________
