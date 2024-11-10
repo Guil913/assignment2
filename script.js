@@ -54,12 +54,11 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-//carousel________________________________________________________________________________
+//quote api________________________________________________________________________________
 document.addEventListener('DOMContentLoaded', () => {
     const quoteButton = document.querySelector('.quote-button');
     const quoteDisplay = document.querySelector('.quote-display');
 
-    // Function to fetch random quote
     async function fetchRandomQuote() {
         quoteDisplay.textContent = "Loading quote...";
 
@@ -72,9 +71,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const data = await response.json();
 
-            // Check if the advice is available
+          
             if (data && data.slip && data.slip.advice) {
-                quoteDisplay.textContent = `"${data.slip.advice}"`; // Display the advice as a quote
+                quoteDisplay.textContent = `"${data.slip.advice}"`; 
             } else {
                 quoteDisplay.textContent = "Sorry, could not fetch the quote at the moment.";
             }
@@ -83,7 +82,6 @@ document.addEventListener('DOMContentLoaded', () => {
             console.error(error);
         }
     }
-
-    // Add event listener to the button to fetch the quote when clicked
+    
     quoteButton.addEventListener('click', fetchRandomQuote);
 });
