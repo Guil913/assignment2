@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         dayButton.addEventListener('click', () => {
             if (i === 1) {
-                window.scrollTo({ top: 0, behavior: 'smooth' }); // Scroll to top for Day 1
+                window.scrollTo({ top: 0, behavior: 'smooth' }); //dia1
             } else {
                 const daySection = document.querySelector(`.poem-section h3:nth-of-type(${i - 1})`);
                 if (daySection) {
