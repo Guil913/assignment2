@@ -20,7 +20,20 @@ h2 {
     text-align: center;
     margin-bottom: 20px;
     font-family: Times New Roman, sans-serif;
-}
+    animation: stretchText 4s infinite;
+  }
+  
+  @keyframes stretchText {
+    0% {
+      transform: scaleX(1);
+    }
+    50% {
+      transform: scaleX(1.2); 
+    }
+    100% {
+      transform: scaleX(1); 
+    }
+  }
 
 h3{
   text-align: center;

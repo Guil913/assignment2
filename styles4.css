@@ -2,7 +2,23 @@
 
 body{
     background-color: rgb(222, 253, 253);
-   }
+    animation-name: backgr;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes backgr {
+    0% {
+      background-color:rgb(222, 253, 253);
+    }
+    50% {
+      background-color: rgb(255, 255, 255);
+    }
+    100% {
+      background-color: rgb(222, 253, 253);
+    }
+  }
+  o {background-color: rgb(255, 255, 255)}
 
 #swapStyleButton, .days-list button{ 
     background-color: #4ea3a4;
