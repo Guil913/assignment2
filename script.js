@@ -85,3 +85,40 @@ document.addEventListener('DOMContentLoaded', () => {
     
     quoteButton.addEventListener('click', fetchRandomQuote);
 });
+
+//calendar pop-up________________________________________________________________________________
+document.addEventListener('DOMContentLoaded', () => {
+    const daysButton = document.querySelector('.days-button');
+    const daysOverlay = document.querySelector('.days-overlay');
+    const closeDaysPopupButton = document.querySelector('.close-days-popup');
+    const daysList = document.querySelector('.days-list');
+
+    for (let i = 1; i <= 31; i++) {
+        const dayButton = document.createElement('button');
+        dayButton.textContent = `Day ${i}`;
+        
+        dayButton.addEventListener('click', () => {
+            if (i === 1) {
+                window.scrollTo({ top: 0, behavior: 'smooth' }); // Scroll to top for Day 1
+            } else {
+                const daySection = document.querySelector(`.poem-section h3:nth-of-type(${i - 1})`);
+                if (daySection) {
+                    daySection.scrollIntoView({ behavior: 'smooth' });
+                }
+            }
+
+            daysOverlay.style.display = 'none';
+        });
+        
+        daysList.appendChild(dayButton);
+    }
+
+    daysButton.addEventListener('click', () => {
+        daysOverlay.style.display = 'flex';
+    });
+
+    closeDaysPopupButton.addEventListener('click', () => {
+        daysOverlay.style.display = 'none';
+    });
+});
+
