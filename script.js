@@ -55,30 +55,40 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 //carousel________________________________________________________________________________
-// Function to fetch a random animal fact
-async function getRandomAnimalFact() {
-    try {
-        const response = await fetch('https://some-random-api.ml/facts/animal');
-        
-        if (!response.ok) {
-            throw new Error('Failed to fetch animal fact');
+document.addEventListener('DOMContentLoaded', () => {
+    // Get elements from the DOM
+    const animalFactButton = document.getElementById('get-animal-fact');
+    const animalFactDisplay = document.getElementById('animal-fact');
+
+    // Function to fetch animal fact
+    async function fetchAnimalFact() {
+        // Show loading text while waiting for the fact
+        animalFactDisplay.textContent = "Loading animal fact...";
+
+        try {
+            const response = await fetch('https://some-random-api.ml/facts/animal');
+            
+            // Check if the response is successful
+            if (!response.ok) {
+                throw new Error('Failed to fetch');
+            }
+
+            const data = await response.json();
+
+            // Check if the fact is available in the response
+            if (data && data.fact) {
+                // Display the fact in the div
+                animalFactDisplay.textContent = data.fact;
+            } else {
+                animalFactDisplay.textContent = "Sorry, could not fetch the animal fact at the moment.";
+            }
+        } catch (error) {
+            // Handle any errors
+            animalFactDisplay.textContent = "Sorry, could not fetch the animal fact at the moment.";
+            console.error(error);
         }
-
-        const data = await response.json();
-        return data.fact;  // The fact will be inside the 'fact' key
-    } catch (error) {
-        console.error('Error fetching animal fact:', error);
-        return 'Sorry, could not fetch the animal fact at the moment.';
     }
-}
 
-// Function to display the fetched animal fact
-function displayAnimalFact() {
-    getRandomAnimalFact().then(fact => {
-        const animalFactElement = document.querySelector('.animal-fact p');
-        animalFactElement.textContent = fact;  // Set the fact as the text of the paragraph
-    });
-}
-
-// Call the function to display the animal fact when the page loads
-document.addEventListener('DOMContentLoaded', displayAnimalFact);
+    // Add event listener to the button to fetch animal fact when clicked
+    animalFactButton.addEventListener('click', fetchAnimalFact);
+});
