@@ -497,66 +497,82 @@ textarea {
       }
 
       @media only screen and (max-width: 1200px) {
-        h1{
-          margin-top:100pt;
-          }
-          .swap-style-button {
-            left:40%;
-            padding: 30px 60px;
-            font-size:1.2em;
-          }
-
-.poem{
-  font-size: 1.5vw;
-}
-.image-container {
-  opacity:0.5;
-    }
-      }
-      .what-is-this {
-        font-size: 2.2vw;
-     opacity:0.5;
-    }
-    .current-season {
-      font-size: 2.2vw;
-      opacity:0.5;
-    }
-.info{
-  font-size: 1em;
-}
-.logo {
-  display: none;
-}
-
-
-      @media only screen and (max-width: 800px) {
-h1{
-margin-top:100pt;
-}
-
-
-
-
-        .poem{
-          font-size: 2.5vw;
+        h1 {
+            margin-top: 100pt;
         }
-
+    
+        .poem {
+            font-size: 1.5vw;
+        }
+    
         .image-container {
-      opacity:0.2;
+            opacity: 0.5;
         }
-h2{
-
-  font-size: 5.2vw;
-
-}
-   
-      .days-button {
-        right:35%;
-        opacity:0.5;
-        font-size: 4.2vw;
-       
+    
+        .info {
+            font-size: 1em;
+        }
+    
+        .logo {
+            display: none;
+        }
+ 
+        .swap-style-button {
+            position: fixed;
+          top:85%;
+          left:91%;
+            font-size: 1.2vw;
+         opacity:1;
+        }
+     
+    
+        .days-button {
+            position: fixed;
+            bottom: 40px;
+            right: 20px;
+            font-size: 1.2vw;
+            z-index: 2200;
+        }
     }
-
-
-
+    
+    @media only screen and (max-width: 800px) {
+        h1 {
+            margin-top: 100pt;
+        }
+    
+        .poem {
+            font-size: 2.5vw;
+        }
+    
+        .image-container {
+            opacity: 0.2;
+        }
+    
+        h2 {
+            font-size: 5.2vw;
+        }
+    
+        .days-button {
+            right: 35%;
+            bottom:91%;
+            opacity: 0.8;
+            font-size: 4.2vw;
+        }
+    
+        .what-is-this {
+            font-size: 2.2vw;
+        }
+    
+        .current-season {
+            font-size: 2.2vw;
+        }
+    
+        .swap-style-button {
+          position: fixed;
+        top:92%;
+        left:88%;
+          font-size: 1.2vw;
+       opacity:1;
+      }
     }
+    
