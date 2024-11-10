@@ -84,7 +84,20 @@ h3{
     opacity: 0.5;
     transition: opacity 0.3s ease;
     z-index: 2100;
-}
+    animation: scaleButton 6s infinite alternate ease-in-out;
+  }
+  
+  @keyframes scaleButton {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1); 
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
 
 .swap-style-button:hover {
     opacity: 1;
@@ -390,8 +403,20 @@ textarea {
             border-radius: 50%;
             transition: opacity 0.3s ease;
             z-index: 2100;
-        }
-    
+            animation: scaleButton 6s infinite alternate ease-in-out;
+          }
+          
+          @keyframes scaleButton {
+            0% {
+              transform: scale(1);
+            }
+            50% {
+              transform: scale(1.1); 
+            }
+            100% {
+              transform: scale(1);
+            }
+          }
         .days-button:hover {
             opacity: 0.8;
         }
