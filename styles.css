@@ -92,6 +92,9 @@ h3{
     background-color: #754a4a;
     color: #fff;
     border: none;
+    position: fixed; 
+    top: 2.6%; 
+    left: 15%;
     padding: 10px 20px;
     cursor: pointer;
     font-size: 1vw;
@@ -495,9 +498,13 @@ textarea {
 
       @media only screen and (max-width: 1200px) {
         h1{
-          margin-top:50pt;
+          margin-top:100pt;
           }
-              
+          .swap-style-button {
+            left:40%;
+            padding: 30px 60px;
+            font-size:1.2em;
+          }
 
 .poem{
   font-size: 1.5vw;
@@ -507,15 +514,18 @@ textarea {
     }
       }
       .what-is-this {
-        font-size: 3.2vw;
+        font-size: 2.2vw;
      opacity:0.5;
     }
     .current-season {
-      font-size: 3.2vw;
+      font-size: 2.2vw;
       opacity:0.5;
     }
 .info{
   font-size: 1em;
+}
+.logo {
+  display: none;
 }
 
 
@@ -539,10 +549,7 @@ h2{
   font-size: 5.2vw;
 
 }
-     .logo {
-          display: none;
-      }
-
+   
       .days-button {
         right:35%;
         opacity:0.5;
