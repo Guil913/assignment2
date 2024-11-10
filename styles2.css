@@ -10,5 +10,9 @@ body{
 
  .fixed-header {
     background: linear-gradient(to bottom, rgb(216, 202, 48), rgba(122, 248, 134, 0));
-   }
+ }
    
+ .swap-style-button {
+      background-color: #bb9e20;
+      color: #ffffff;
+ }

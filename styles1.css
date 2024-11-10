@@ -12,3 +12,8 @@ background-color: rgb(236, 255, 223);
     background: linear-gradient(to bottom, rgb(174, 253, 71), rgba(122, 248, 134, 0));
    }
    
+   
+.swap-style-button {
+    background-color: #02460d;
+    color: #fff;
+}
