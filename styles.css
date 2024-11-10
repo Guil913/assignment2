@@ -5,6 +5,7 @@ body {
     padding: 0;
     overflow-x: hidden;
     transition: opacity 0.5s ease-in-out;
+    
 }
 
 
@@ -533,6 +534,11 @@ textarea {
             font-size: 1.2vw;
             z-index: 2200;
         }
+
+        .current-season, .what-is-this, .swap-style-button, .base-img {
+          position: fixed;
+      }
+      
     }
     
     @media only screen and (max-width: 800px) {
@@ -579,6 +585,23 @@ textarea {
       }
   }
   
+  @media only screen and (max-width: 530px) {
+
+  .days-list button {
+   
+    padding: 10px;
+    font-size: 0.5rem;
+    color:black;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+  }
+
+  }
+
+
+
+
   @media only screen and (max-width: 420px) {
   
       .current-season, .what-is-this {
