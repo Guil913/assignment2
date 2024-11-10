@@ -13,7 +13,11 @@ background-color: rgb(236, 255, 223);
    }
    
    
-.swap-style-button {
+.swap-style-button,.quote-button{
     background-color: #02460d;
     color: #fff;
 }
+
+.quote-display {
+    background-color: #b6ffb6;
+  }

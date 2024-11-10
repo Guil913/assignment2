@@ -291,39 +291,35 @@ textarea {
     background-size: cover;
     --i: 10;
   }
-  /*________________________________*/
+  /*quote api________________________________*/
   
-/* General Container Styling */
+
 .quote-container {
   text-align: center;
   margin: 50px auto;
   padding: 20px;
   max-width: 600px;
-  background-color: #f9f9f9;
+ 
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Styling for the Button */
 .quote-button {
   background-color: #4CAF50;
   color: white;
   border: none;
   padding: 15px 30px;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: bold;
-  border-radius: 5px;
+  border-radius: 50%;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-/* Button Hover Effect */
 .quote-button:hover {
-  background-color: #45a049;
   transform: scale(1.05);
 }
 
-/* Styling for the Quote Text */
 .quote-display {
   font-size: 1.5rem;
   font-style: italic;
@@ -338,12 +334,10 @@ textarea {
   transition: background-color 0.3s ease;
 }
 
-/* Add a background color when the quote is loaded */
 .quote-display {
-  background-color: #e3f7e3;
+  background-color: #b6ffb6;
 }
 
-/* Optional: You can add a loading animation for the quote text */
 .quote-display:empty {
   color: #999;
   font-style: normal;

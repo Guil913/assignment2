@@ -12,9 +12,11 @@ body{
     background: linear-gradient(to bottom,  rgb(108, 196, 194), rgba(122, 248, 134, 0));
    }
    
-.swap-style-button {
+.swap-style-button, .quote-button {
     background-color: #1ea8ca;
     color: #fff;
-
 }
    
+.quote-display {
+    background-color: #b4e2f5;
+  }
