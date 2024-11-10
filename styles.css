@@ -536,43 +536,67 @@ textarea {
     }
     
     @media only screen and (max-width: 800px) {
-        h1 {
-            margin-top: 100pt;
-        }
-    
-        .poem {
-            font-size: 2.5vw;
-        }
-    
-        .image-container {
-            opacity: 0.2;
-        }
-    
-        h2 {
-            font-size: 5.2vw;
-        }
-    
-        .days-button {
-            right: 35%;
-            bottom:91%;
-            opacity: 0.8;
-            font-size: 4.2vw;
-        }
-    
-        .what-is-this {
-            font-size: 2.2vw;
-        }
-    
-        .current-season {
-            font-size: 2.2vw;
-        }
-    
-        .swap-style-button {
-          position: fixed;
-        top:92%;
-        left:88%;
-          font-size: 1.2vw;
-       opacity:1;
+      html, body {
+          overflow-x: hidden;
       }
-    }
-    
+      h1 {
+          margin-top: 100pt;
+      }
+  
+      .poem {
+          font-size: 2.5vw;
+      }
+  
+      .image-container {
+          opacity: 0.2;
+      }
+  
+      h2 {
+          font-size: 5.2vw;
+      }
+  
+      .days-button {
+          right: 35%;
+          bottom: 91%;
+          opacity: 0.8;
+          font-size: 4.2vw;
+      }
+  
+      .what-is-this {
+          font-size: 2.2vw;
+      }
+  
+      .current-season {
+          font-size: 2.2vw;
+      }
+  
+      .swap-style-button {
+          position: fixed;
+          top: 92%;
+          left: 88%;
+          font-size: 1.2vw;
+          opacity: 1;
+      }
+  }
+  
+  @media only screen and (max-width: 420px) {
+  
+      .current-season, .what-is-this {
+          top: 10pt;
+          font-size: 2.8vw;
+      }
+  
+      .days-button {
+          right: 38%;
+          bottom: 94%;
+          font-size: 3.2vw;
+      }
+  
+      .swap-style-button {
+          position: fixed;
+          top: 92%;
+          left: 80%;
+          font-size: 2.2vw;
+      }
+  }
+  
