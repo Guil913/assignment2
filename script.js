@@ -62,27 +62,21 @@ document.addEventListener('DOMContentLoaded', () => {
     async function fetchRandomQuote() {
         quoteDisplay.textContent = "Loading quote...";
 
-        try {
-            const response = await fetch('https://api.adviceslip.com/advice');
-
-            if (!response.ok) {
-                throw new Error('Failed to fetch');
-            }
-
+        const response = await fetch('https://api.adviceslip.com/advice');
+        
+        if (response.ok) {
             const data = await response.json();
-
-          
+            
             if (data && data.slip && data.slip.advice) {
                 quoteDisplay.textContent = `"${data.slip.advice}"`; 
             } else {
                 quoteDisplay.textContent = "Sorry, could not fetch the quote at the moment.";
             }
-        } catch (error) {
+        } else {
             quoteDisplay.textContent = "Sorry, could not fetch the quote at the moment.";
-            console.error(error);
         }
     }
-    
+
     quoteButton.addEventListener('click', fetchRandomQuote);
 });
 

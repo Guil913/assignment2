@@ -4,15 +4,16 @@ body{
     background-color: rgb(255, 252, 220);
     }
 
- #swapStyleButton {
+ #swapStyleButton, .days-list button {
         background-color: #dae233;
+        color: rgb(92, 75, 2);
  }
 
  .fixed-header {
     background: linear-gradient(to bottom, rgb(216, 202, 48), rgba(122, 248, 134, 0));
  }
    
- .swap-style-button, .quote-button {
+ .swap-style-button, .quote-button, .days-button {
       background-color: #bb9e20;
       color: #ffffff;
  }
@@ -20,3 +21,7 @@ body{
  .quote-display {
    background-color: #ffe3b9;
  }
+
+ .days-list button:hover {
+   background-color: #ffaa2b;
+}

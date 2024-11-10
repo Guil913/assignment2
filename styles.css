@@ -327,15 +327,16 @@ textarea {
 /*calendar pop-up_______________________________________________*/
  .days-button {
             position: fixed;
-            bottom: 20px;
+            bottom: 40px;
             right: 20px;
-            background-color: #754a4a;
+            background-color: #02460d;
             color: white;
             border: none;
             padding: 10px 20px;
             cursor: pointer;
             font-size: 1.2vw;
             border-radius: 50%;
+            transition: opacity 0.3s ease;
             z-index: 2100;
         }
     
@@ -343,7 +344,7 @@ textarea {
             opacity: 0.8;
         }
     
-        /* Days Pop-up Overlay */
+      
         .days-overlay {
           display: none; 
           position: fixed;
@@ -364,7 +365,7 @@ textarea {
           border-radius: 8px;
           text-align: center;
           width: 80%;
-          max-width: 400px;
+          max-width: 80%;
           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
       }
   

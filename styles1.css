@@ -4,7 +4,7 @@ body{
 background-color: rgb(236, 255, 223);
 }
 
-#swapStyleButton {
+#swapStyleButton, .days-list button {
     background-color: #d5faa6;
 }
 
@@ -13,7 +13,7 @@ background-color: rgb(236, 255, 223);
    }
    
    
-.swap-style-button,.quote-button{
+.swap-style-button,.quote-button, .days-button{
     background-color: #02460d;
     color: #fff;
 }
