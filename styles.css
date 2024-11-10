@@ -20,8 +20,13 @@ h2 {
     text-align: center;
     margin-bottom: 20px;
     font-family: Times New Roman, sans-serif;
-    
 }
+
+h3{
+  text-align: center;
+  font-family: Times New Roman, sans-serif;
+}
+
 
 .poem-container {
     display: flex;
@@ -80,15 +85,6 @@ h2 {
     z-index: 999;
     pointer-events: none;
 }
-
-
-
-/* __________________________________________________________________________________________*/
-
-
-
-
-
 
 .fixed-header {
     position: fixed;
@@ -205,7 +201,7 @@ textarea {
 
 
 
-/* Container for images */
+/* Container for images__________________________________________*/
 .image-container {
     position: relative; 
     z-index: -1;
