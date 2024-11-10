@@ -56,9 +56,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 //carousel________________________________________________________________________________
 document.addEventListener('DOMContentLoaded', () => {
-    // Get elements from the DOM
-    const animalFactButton = document.getElementById('get-animal-fact');
-    const animalFactDisplay = document.getElementById('animal-fact');
+    // Get elements from the DOM using class selectors
+    const animalFactButton = document.querySelector('.get-animal-fact');
+    const animalFactDisplay = document.querySelector('.animal-fact');
 
     // Function to fetch animal fact
     async function fetchAnimalFact() {
